@@ -33,9 +33,10 @@ def plotResults(clusters,means,attribute1,attribute2):
     plt.show()
         
     
-
+#run kmeans and plot the results
 iris=datasets.load_iris()
 X=iris.data
 y=iris.target
+#chose max iterations of 100 for this
 clusters,means=kmeans(X,3,100,.01)
-plotResults(clusters,means,2,1)
+plotResults(clusters,means,0,1)
