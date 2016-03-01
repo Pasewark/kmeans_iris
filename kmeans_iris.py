@@ -38,7 +38,7 @@ def plotResults(clusters,means,attribute1,attribute2):
     group2y=[point[attribute2] for point in clusters[1]]
     group3x=[point[attribute1] for point in clusters[2]]
     group3y=[point[attribute2] for point in clusters[2]]
-    plt.plot(group1x,group1y,'ro',group2x,group2y,'go',group3x,group3y,'bo',means[0][0],means[0][1],'rs',means[1][0],means[1][1],'gs',means[2][0],means[2][1],'bs')
+    plt.plot(group1x,group1y,'ro',group2x,group2y,'go',group3x,group3y,'bo')
     plt.show()
         
     
