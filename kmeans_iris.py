@@ -13,6 +13,7 @@ def kmeans(X,k,maxIterations,threshold):
         for point in X: #assign points to clusters
             distances=[np.linalg.norm(point-m) for m in means] #calculate distances to current means
             clusters[distances.index(min(distances))].append(point)
+        #if no points are in a cluster, assign the respective mean to a random point in the largest cluster
         for i in range(k):
             if len(clusters[i])==0:
                 biggestCluster=0
